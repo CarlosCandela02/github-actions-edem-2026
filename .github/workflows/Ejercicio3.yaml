@@ -9,5 +9,3 @@ strategy:
 jobs:
   Test:
     runs_on: ${{ matrix.so }}
-    steps:
-      - run: echo "Funciona bien en ${{ matrix.so }}"
