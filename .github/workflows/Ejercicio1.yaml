@@ -1,8 +1,9 @@
-env:
-  mi-nombre: Carlos
+name: Ejercicio 1
 
 on:
   workflow_dispatch:
+env:
+  mi-nombre: Carlos
 
 jobs:
   say_hello:
