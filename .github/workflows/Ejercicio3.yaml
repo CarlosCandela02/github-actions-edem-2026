@@ -2,12 +2,12 @@ name: Ejercicio 3
 
 on:
   workflow_dispatch:
-  strategy:
-    matrix:
-      so: [ubuntu-latest, windows-latest, macos-latest]
+strategy:
+  matrix:
+    so: [ubuntu-latest, windows-latest, macos-latest]
 
 jobs:
   say-hello:
-    runs_on: ${{matrix.so}}
+    runs_on: ${{ matrix.so }}
     steps:
-      - run: echo "Funciona bien en ${{matrix.so}}"
+      - run: echo "Funciona bien en ${{ matrix.so }}"
