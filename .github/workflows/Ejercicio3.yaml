@@ -4,10 +4,10 @@ on:
   workflow_dispatch:
 strategy:
   matrix:
-    so: [ubuntu-latest, windows-latest, macos-latest]
+    so: [python3.11, python3.12]
 
 jobs:
-  say-hello:
+  Test:
     runs_on: ${{ matrix.so }}
     steps:
       - run: echo "Funciona bien en ${{ matrix.so }}"
